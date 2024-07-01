@@ -10,28 +10,29 @@
 <body>
     <header>
         <img class="logoprincipal" src="./Assets/logo-pccomponentes.svg" alt="logo de PcComponentes">
-        <a id="hamburguesa" href="#">
-            <img src="./Assets/hamburguesa-3-lineas.svg" alt="hamburguesa desplegable">
+        <a  href="#">
+            <img id="hamburguesa" src="./Assets/hamburguesa-3-lineas.svg" alt="hamburguesa desplegable">
             <p>Todas las categorías</p>
         </a> 
-        <form id="checkbox">
+        <form class="checkbox">
             <select name="Todo el catalogo">
+                <option value="Todoelcatalogo"> Todo el catalogo</option>
                 <option value="PcDays"> Pc Days 2024</option>
                 <option value="Todoelcatalogo"> Todo el catalogo</option>
                 <option value="Reacondicionados"> Reacondicionados</option>
+        </form>
         <search>
-            <form action="#">
-              <label>
-                <input type="search" name="buscador" autocomplete="off" placeholder="Buscar">
-                <img class="lupa" src="./Assets/lupa.svg" alt="icono lupa">
+            <form class="buscador" action="#">
+              <label >
+                <input  type="search" name="buscador" autocomplete="off" placeholder="Buscar">
               </label>
             </form>
           </search>
-          <a class="logitem" href="#">
+          <a class="user" href="#">
             <img src="./Assets/icono-usuario.svg" alt="mi cuenta">
           <p>Mi cuenta</p>
           </a>
-          <a class="logitem" href="#">
+          <a class="cesta" href="#">
             <img src="./Assets/icono-carrito.svg" alt="carro compra">
           <p>Mi cesta</p>
         </a>

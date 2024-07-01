@@ -10,6 +10,7 @@
 
   a {
     text-decoration: none;
+    color: var(--primary-color);
 
   }
 
@@ -20,18 +21,19 @@
     --orange-color: #ff6000;
     --blue-background: #170453;
     --border: 2px solid var(--blue-color);
-    --spacing: 15px;
+    --spacing: 10px;
   }
 body{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 1fr 300px;
+  grid-template-rows: 100px 1fr 300px;
+  height: 100vh;
 }
 
   header {
     display: grid;
     grid-row: 1/2;
-    grid-template-columns: 200px 300px 1fr 1fr 200px 200px;
+    grid-template-columns: 180px 200px 200px 1fr 150px 150px;
     grid-template-rows: 80px;
     width: 100%;
     padding: var(--spacing);
@@ -42,15 +44,67 @@ body{
     align-self: center;
     justify-self: center;
     object-fit: cover;
-    padding: var(--spacing);
+    padding: 20px;
   }
-
+header a {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+}
   #hamburguesa {
     grid-column: 2/3;
     width: 30px;
     display: flex;
     align-items: center;
     justify-items: center;
-    gap: 10px
+    gap: 30px
   }
+
+  header .checkbox {
+    grid-column: 3/5;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    
+  
+  }
+  header .checkbox select {
+    grid-column: 3/4;
+    padding: 20px;
+    width: 100%;  
+    min-width: 180px;
+    max-width: 200px;
+  }
+  header .checkbox input {
+    grid-column: 4/5;
+    padding: 20px;
+    width: 100%;  
+  }
+
  
+  header .user {
+    grid-column: 5/6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  header .user img {
+    width: 30px;
+  }
+
+  header .cesta {
+    grid-column: 6/7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  header .cesta img {
+    width: 30px;
+  }
+
+
+
