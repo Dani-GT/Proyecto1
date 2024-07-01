@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
+
+  }
+
+  :root {
+    --primary-color: black;
+    --secondary-color:#737373;
+    --red-color: #bf0019;
+    --orange-color: #ff6000;
+    --blue-background: #170453;
+    --border: 2px solid var(--blue-color);
+    --spacing: 15px;
+  }
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr 300px;
+}
+
+  header {
+    display: grid;
+    grid-row: 1/2;
+    grid-template-columns: 200px 300px 1fr 1fr 200px 200px;
+    grid-template-rows: 80px;
+    width: 100%;
+    padding: var(--spacing);
+  }
+
+  .logoprincipal {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+    padding: var(--spacing);
+  }
+
+  #hamburguesa {
+    grid-column: 2/3;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px
+  }
+ 
