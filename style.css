@@ -16,7 +16,7 @@
 
   :root {
     --primary-color: black;
-    --secondary-color:#737373;
+    --secondary-color:#989898b4;
     --red-color: #bf0019;
     --orange-color: #ff6000;
     --blue-background: #170453;
@@ -72,18 +72,19 @@ header a {
   }
   header .checkbox select {
     grid-column: 3/4;
-    padding: 20px;
+    padding: 16px;
     width: 100%;  
     min-width: 180px;
     max-width: 200px;
+    letter-spacing: 0.7px;
   }
   header .checkbox input {
     grid-column: 4/5;
-    padding: 20px;
-    width: 100%;  
+    padding: 16px;
+    width: 100%;    
   }
 
- 
+
   header .user {
     grid-column: 5/6;
     align-items: center;
@@ -92,7 +93,7 @@ header a {
   }
 
   header .user img {
-    width: 30px;
+    width: 24px;
   }
 
   header .cesta {
@@ -103,7 +104,7 @@ header a {
   }
 
   header .cesta img {
-    width: 30px;
+    width: 24px;
   }
 
 
