@@ -33,7 +33,7 @@ body{
   header {
     display: grid;
     grid-row: 1/2;
-    grid-template-columns: 180px 200px 200px 1fr 150px 150px;
+    grid-template-columns: 180px 230px 200px 1fr 140px 140px;
     grid-template-rows: 80px;
     width: 100%;
     padding: var(--spacing);
@@ -58,7 +58,7 @@ header a {
     display: flex;
     align-items: center;
     justify-items: center;
-    gap: 30px
+    gap: 20px
   }
 
   header .checkbox {
@@ -90,7 +90,7 @@ header a {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 10px;
+    margin: 5px;
   }
 
   header .user:hover{
@@ -99,14 +99,15 @@ header a {
 
   header .user img {
     width: 24px;
+    
   }
 
   header .cesta {
     grid-column: 6/7;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
-    margin: 10px;
+    margin: 5px;
   }
 
   header .cesta:hover {
@@ -115,6 +116,7 @@ header a {
 
   header .cesta img {
     width: 24px;
+   
   }
 
 nav ul {
@@ -139,7 +141,6 @@ body p {
   display: flex;
   grid-row: 3/4;
   width: 100%;
-  padding: 18px;
   align-items: center;
   align-content: center;
 }
