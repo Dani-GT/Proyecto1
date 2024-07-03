@@ -33,7 +33,7 @@ body{
   header {
     display: grid;
     grid-row: 1/2;
-    grid-template-columns: 180px 220px 200px 1fr 140px 140px;
+    grid-template-columns: 180px 220px 200px 1fr 150px 150px;
     grid-template-rows: 60px;
     width: 100%;
     justify-content: center;
@@ -88,6 +88,8 @@ header a:hover {
     max-width: 180px;
     border: grey solid 0.8px;
     letter-spacing: 0.7px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
   }
   header .checkbox input {
     grid-column: 4/5;
@@ -95,6 +97,8 @@ header a:hover {
     min-width: 100px;
     width: 100%;
     border: grey solid 0.8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 
   header .user {
@@ -104,6 +108,7 @@ header a:hover {
     display: flex;
     margin: 5px;
     row-gap: 10px;
+    padding: 10px;
   }
 
   header .user:hover{
@@ -121,6 +126,7 @@ header a:hover {
     justify-content: flex-start;
     display: flex;
     margin: 5px;
+    padding: 10px;
   }
 
   header .cesta:hover {
