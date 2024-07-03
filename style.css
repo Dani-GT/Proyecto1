@@ -25,7 +25,7 @@
 body{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 50px 50px 1fr 200px 400px;
+  grid-template-rows: 80px 50px 50px 1fr 400px;
   height: 100vh;
   font-family:'open sans';
 }
@@ -141,35 +141,38 @@ header a:hover {
 nav ul {
   grid-row: 2/3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   padding: var(--spacing);
   list-style: none;
-  gap: 20px;
   border: grey solid 0.8px;
   border-left: none;
   border-right: none;
   font-size: 14px;
-  padding-right: 50px;
-  letter-spacing: 1px;
+  padding-right: 50px; 
 }
+ nav ul li {
+  padding-right: 20px;
+  padding-left: 20px;
+ }
 
 nav ul li:hover {
   background-color: rgba(128, 128, 128, 0.155);  
 }
  
-body p {
+body .parrafo {
   display: flex;
   grid-row: 3/4;
   width: 100%;
   padding: var(--spacing);
   align-items: center;
-  align-content: center;
 }
 
 body main {
   display: grid;
+  grid-column: 1/2;
+  grid-row: 4/5;
   grid-template-columns:1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: 300px 1fr 400px 300px;
 
 }
 
@@ -195,7 +198,7 @@ body div a img{
   grid-row: 2/3;
   grid-column: 1/7;
   grid-template-columns: repeat(6,1fr) ;
-  grid-template-rows: repeat(2,280px) ;
+  grid-template-rows: 280px 280px;
   background-color: var(--blue-background);
   padding: 30px;
   list-style: none;
@@ -215,14 +218,46 @@ body div a img{
   border-radius: 20px;
 }
 
+.promociones{
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-items: center;
+}
+
+.promociones ul {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: repeat(6,1fr);
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.promociones ul li a{
+  display: grid;
+  justify-items: center;
+}
+
+ .promociones img {
+  width: 100%;
+  padding: 20px;
+ }
+
+#outlet {
+  height: 140px;
+  width: auto;
+}
 footer {
   grid-column: 1/7;
   grid-row: 4/6;
+  grid-template-columns:1fr;
+  grid-template-rows:250px;
 }
 .service {
   display: flex;
-  grid-column: 1/7;
-  grid-row: 4/5;
+  grid-column: 1/2;
+  grid-row: 1/2;
   justify-content: space-around;
   align-items: center;
   justify-items: center;
