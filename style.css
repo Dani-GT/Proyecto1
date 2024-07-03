@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     font-weight: 300;
+    
   }
 
   a {
@@ -28,6 +27,7 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 80px 50px 50px 1fr 200px 400px;
   height: 100vh;
+  font-family:'open sans';
 }
 
   header {
@@ -168,8 +168,9 @@ body p {
 
 body main {
   display: grid;
-  grid-template-columns:repeat(6, 1fr);
-  grid-template-rows: 300px 250px 250px 300px 400px;
+  grid-template-columns:1fr;
+  grid-template-rows: 300px;
+
 }
 
 body .ofertas {
@@ -189,18 +190,29 @@ body div a img{
   border-radius: 20px; 
 }
 
-.products {
+.products ul{
   display: grid;
-  grid-row: 2/4;
+  grid-row: 2/3;
   grid-column: 1/7;
+  grid-template-columns: repeat(6,1fr) ;
+  grid-template-rows: repeat(2,280px) ;
   background-color: var(--blue-background);
+  padding: 30px;
+  list-style: none;
+}
+
+.products ul li{
+  border-radius: 16px;
+  justify-content: center;
+  align-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .products ul li img {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  padding: 20px;
-  width: 100%;
+  display: grid;
+  height: 80%;
+  border-radius: 20px;
 }
 
 footer {
