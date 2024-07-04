@@ -146,7 +146,6 @@ nav ul {
   grid-row: 2/3;
   display: flex;
   justify-content: end;
-  padding: var(--spacing);
   list-style: none;
   border: grey solid 0.8px;
   border-left: none;
@@ -157,8 +156,7 @@ nav ul {
 }
 
  nav ul li {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 20px;
  }
 
 nav ul li:hover {
