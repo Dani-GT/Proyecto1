@@ -32,6 +32,7 @@ body{
 
   header {
     display: grid;
+    position: fixed;
     grid-row: 1/2;
     grid-template-columns: 180px 220px 200px 1fr 150px 150px;
     grid-template-rows: 60px;
@@ -39,6 +40,8 @@ body{
     justify-content: center;
     align-content: center;
     gap: 5px;
+    background-color: white;
+    padding: 10px;
     
   }
 
@@ -150,6 +153,7 @@ nav ul {
   border-right: none;
   font-size: 14px;
   padding-right: 50px; 
+  margin-top: 80px;
 }
 
  nav ul li {
