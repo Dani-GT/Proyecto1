@@ -39,6 +39,7 @@ body{
     justify-content: center;
     align-content: center;
     gap: 5px;
+    
   }
 
   .logoprincipal {
@@ -150,6 +151,7 @@ nav ul {
   font-size: 14px;
   padding-right: 50px; 
 }
+
  nav ul li {
   padding-right: 20px;
   padding-left: 20px;
@@ -172,8 +174,7 @@ body main {
   grid-column: 1/2;
   grid-row: 4/5;
   grid-template-columns:1fr;
-  grid-template-rows: 300px 1fr 250px 300px;
-
+  grid-template-rows: 300px 1fr 250px 300px 350px;
 }
 
 body .ofertas {
@@ -248,12 +249,14 @@ body div a img{
   height: 140px;
   width: auto;
 }
+
 footer {
   grid-column: 1/7;
   grid-row: 4/6;
   grid-template-columns:1fr;
   grid-template-rows:250px;
 }
+
 .service {
   display: flex;
   grid-column: 1/2;
@@ -273,3 +276,31 @@ footer {
   align-items: center;
  }
 
+ .footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 20px;
+ }
+
+ .footer ul {
+  list-style: none;
+  padding: 20px; 
+ }
+
+ .footer ul li {
+  padding:10px; 
+ }
+
+ .footer ul img {
+  width: 20px;
+ }
+
+ h4 {
+  font-weight: bold;
+  padding:10px;
+ }
+
+ .footer ul li:hover {
+  background-color: rgba(128, 128, 128, 0.155); 
+ }
